@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= erb :'partials/head' %>
+  
+
+  <body>
+
+    <div class="container">
+      <%= erb :'partials/header' %>
+    
+
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+          <div class="span8">
+          <%= yield %>
+       </div>
+        <div class="span4">
+          <%= erb :'news/menu' %>
+        </div>
+      </div>
+      <hr>
+ 
+      <div class="footer">
+        <p>&copy; Fundacja Lighthouse 2013</p>
+      </div>
+
+    </div>
+     <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/advanced.js"></script>
+    <script src="/js/wysi.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/wysi-bootstrap.js"></script>
+    <script>
+      $('#wysihtml5-textarea').wysihtml5();
+      
+    </script>
+  </body>
+</html>

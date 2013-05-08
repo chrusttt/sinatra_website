@@ -1,0 +1,16 @@
+<div class="span12">
+<% if flash[:error] %>
+	 <div><%= flash[:error] %></div>
+<% end %>
+<form action="/news" method="post" accept-charset="utf-8" class="form-horizontal" enctype="multipart/form-data">
+	<p><input type="text" name="article[title]" value="" class="span12"/></p>
+	<p><textarea name="article[content]" id="wysihtml5-textarea" rows="15" class="input-block-level" value="article[content]" autofocus></textarea></p>
+	
+	<p><input type="submit" value="Opublikuj news" class="btn" /></p>
+		
+
+</form>
+</div>	
+
+	
+	

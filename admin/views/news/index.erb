@@ -1,0 +1,22 @@
+<table class="table table striped">
+	<thead>
+		<th>Tytuł:</th>
+		<th>Treść:</th>
+		<th>Autor:</th>
+		<th>Data:</th>
+		<th></th>
+	</thead>
+	<tbody>
+	<% @news.each do |n| %>
+		<tr>
+			<td><%= n.title %></td>
+			<td><%= n.content %></td>
+			<td>Plejsholder</td>
+			<td><%= n.date_format %></td>
+			<td>Usuń</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+	
